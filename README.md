@@ -1,0 +1,152 @@
+# Sira (ሥራ) Job Board Platform (`JObBoardV2`)
+
+**Brand:** Sira · ሥራ (*Find work. Build what’s next.*)  
+**Course:** WEB II — Full Stack Web Development  
+**Architecture:** React SPA (Vite) + Node.js / Express REST API + MongoDB Atlas (Mongoose)  
+**Security Model:** Server-Side Sessions with HTTP-Only Cookies + Cross-Site SameSite=None + MongoDB TTL  
+**Automated Tests:** 92 / 92 Tests Passing (100% Green across 5 test suites)  
+
+---
+
+## 🌐 Live Production Deployments (Verified Online)
+
+| Tier / Component | Cloud Provider | Live URL / Endpoint | Status |
+| :--- | :--- | :--- | :---: |
+| **Frontend Application** | Vercel (Hobby Tier) | [https://j-ob-board-v2.vercel.app](https://j-ob-board-v2.vercel.app) | 🟢 Live |
+| **Backend REST API** | Render (Web Service) | [https://sira-api-idc1.onrender.com/api/jobs](https://sira-api-idc1.onrender.com/api/jobs) | 🟢 Live |
+| **Cloud Database** | MongoDB Atlas (M0) | `sira-cluster.hbs34rn.mongodb.net/jobboard_v2` | 🟢 Connected |
+| **Source Code Repository**| GitHub | [OriginalAlazar/JObBoardV2](https://github.com/OriginalAlazar/JObBoardV2) | 🟢 Synced |
+
+> **Presentation & Defense Package:** Open [DOCUMENTATION.html](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/DOCUMENTATION.html) in any browser and click **"🎤 Defense Mode"** in the top navigation bar to toggle presentation-optimized view with 1-click credential copying, timed demonstration script, and 10 technical examiner Q&A defenses.
+
+---
+
+## 📖 Master Documentation Package
+
+The project includes an enterprise-grade documentation suite organized in the [`docs/`](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs) directory:
+
+| Document | Title | Purpose |
+| :--- | :--- | :--- |
+| [01-project-plan.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/01-project-plan.md) | Project Plan & Scope | Master milestones, stack boundaries & execution roadmap |
+| [02-srs.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/02-srs.md) | Software Requirements Specification | Formal requirements, guest/seeker/employer scopes, exclusions |
+| [03-use-cases.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/03-use-cases.md) | Use Case Specification | UC-01 through UC-18 flows, actors, preconditions & exceptions |
+| [04-system-architecture.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/04-system-architecture.md) | System & Cloud Architecture | 3-tier structure, cross-origin cookies & zero direct DB access |
+| [05-database-design.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/05-database-design.md) | Database Design & Modeling | Collections, ERD, compound unique index & MongoDB TTL |
+| [06-api-specification.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/06-api-specification.md) | REST API Contract | Exact endpoints, payloads, route ordering & response codes |
+| [07-authentication-authorization.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/07-authentication-authorization.md) | Auth & Security Engine | bcrypt, server sessions, `requireAuth`, dev vs. prod cookies |
+| [08-business-rules.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/08-business-rules.md) | Business Rules | BR-001 to BR-010 (duplicates, closed jobs, ownership) |
+| [09-ui-ux-specification.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/09-ui-ux-specification.md) | UI/UX & Component Design | Page flows, component states, loading/empty/error states |
+| [10-deployment.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/10-deployment.md) | Academic Cloud Deployment | Vercel + Render + Atlas setup & cold-start characteristics |
+| [11-environment-configuration.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/11-environment-configuration.md) | Environment & Secrets | `.env.example`, CORS configurations, cookie security rules |
+| [12-testing-plan.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/12-testing-plan.md) | QA & Test Execution Matrix | Unit, integration, security & production smoke tests |
+| [13-git-team-workflow.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/13-git-team-workflow.md) | Git & Team Workflow | Branching rules, conventional commits & member ownership |
+| [DEPLOYMENT-RUNBOOK.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/DEPLOYMENT-RUNBOOK.md) | Operational Deployment Runbook | Step-by-step pre-flight, cloud setup & troubleshooting |
+
+### 📊 System Architecture & Diagrams
+High-resolution visual diagrams are available in [`docs/diagrams/`](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams):
+- **System Architecture:** [PNG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/system-architecture.png) • [SVG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/system-architecture.svg)
+- **Database ERD:** [PNG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/database-erd.png) • [SVG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/database-erd.svg)
+- **Use Case Architecture:** [PNG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/use-case-diagram.png) • [SVG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/use-case-diagram.svg)
+- **Deployment Topology:** [PNG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/deployment-diagram.png) • [SVG](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/docs/diagrams/deployment-diagram.svg)
+
+### 📑 Quick Reference Formats
+- 🌐 **Interactive Web Edition (Single Page):** [DOCUMENTATION.html](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/DOCUMENTATION.html)
+- 📄 **Consolidated Master Markdown:** [DOCUMENTATION.md](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/DOCUMENTATION.md)
+- 📑 **Finalized Decisions & Team Action Plan (PDF):** [FINALIZED_DECISIONS_AND_ACTIONS.pdf](file:///c:/Users/Alazar/OneDrive/Documents/SPR2026/Web%20II/Project/JObBoardV2/FINALIZED_DECISIONS_AND_ACTIONS.pdf)
+
+---
+
+## 🚀 Quick Start Guide
+
+### 1. Prerequisites
+- **Node.js** (v18 or higher recommended)
+- **MongoDB** (running locally on port 27017 or via MongoDB Atlas connection string)
+- **Git**
+
+### 2. Backend Setup
+```bash
+cd server
+npm install
+# Ensure .env is configured (see sample below)
+npm run seed     # Populates demo users, jobs, and applications
+npm run dev      # Starts Express server with nodemon on http://localhost:5000
+```
+
+### 3. Frontend Setup
+```bash
+cd client
+npm install
+npm run dev      # Starts Vite dev server on http://localhost:5173
+```
+
+---
+
+## 🔑 Demo Accounts (Pre-seeded)
+
+All demo accounts use the password: `Password123!`
+
+| Role | Name | Email | Organization | Key Capabilities |
+| :--- | :--- | :--- | :--- | :--- |
+| **Employer #1** | Hana Alemu | `employer@demo.com` | NEBO Tech | Post jobs, review candidate pipeline, evaluate status |
+| **Employer #2** | Abebe Bikila | `recruiter@demo.com` | Luna Digital / Ethio Systems | Post jobs, review applicants, evaluate status |
+| **Candidate #1** | Samuel Tadesse | `seeker1@demo.com` | N/A | Browse, apply with resumeLink, track status, withdraw |
+| **Candidate #2** | Sarah Mekonnen | `seeker2@demo.com` | N/A | Browse, apply with resumeLink, track status, withdraw |
+
+---
+
+## 🛠 Tech Stack Boundaries
+
+| Permitted | Excluded (Strict Policy) |
+| :--- | :--- |
+| ✅ React (Vite) + React Router v6 | ❌ JWT (`jsonwebtoken`) |
+| ✅ Axios (`withCredentials: true`) | ❌ Passport.js / OAuth |
+| ✅ Context API (`AuthContext`) | ❌ Redux / Zustand |
+| ✅ Express.js + Mongoose | ❌ TypeScript |
+| ✅ Server-Side Sessions (`cookie-parser`) | ❌ GraphQL |
+| ✅ MongoDB TTL Index for Sessions | ❌ Multer / File upload storage |
+| ✅ bcrypt password hashing | ❌ Socket.io |
+| ✅ Vanilla CSS / CSS Modules | ❌ Admin role / Admin portal |
+
+---
+
+## 📂 Project Structure Overview
+
+```
+JObBoardV2/
+├── client/              # React frontend (Vite)
+│   ├── src/
+│   │   ├── components/  # Shared UI (Navbar, JobCard, FilterPanel, etc.)
+│   │   ├── pages/       # Public, Seeker & Employer Views
+│   │   ├── context/     # AuthContext
+│   │   ├── services/    # Axios instance (api.js)
+│   │   └── index.css    # Design tokens & styles
+├── server/              # Express backend
+│   ├── config/          # MongoDB connection
+│   ├── models/          # User, Job, Application, Session
+│   ├── routes/          # auth.js, jobs.js, applications.js
+│   ├── middleware/      # requireAuth, requireRole, error handler
+│   ├── utils/           # bcrypt & session helpers
+│   ├── seed.js          # Realistic demo dataset
+│   └── server.js        # Main server entry
+├── DOCUMENTATION.md     # Comprehensive Team Technical Manual
+└── README.md            # Quick reference guide
+```
+
+---
+
+## 👥 Team Work Breakdown & Delivery Status
+
+| Phase | Module | Assigned To | Status |
+| :---: | :--- | :--- | :---: |
+| **1** | Environment, Git & Scaffolding | Team | ✅ Complete |
+| **2** | Mongoose Models & Constraints (TTL, Compound Index) | Backend | ✅ Complete |
+| **3** | Server-side Session Authentication & bcrypt | Backend | ✅ Complete |
+| **4** | Jobs CRUD, Search, Filter & Ownership Verification | Backend | ✅ Complete |
+| **5** | Application Submission & Status Decision Flow | Backend | ✅ Complete |
+| **6** | MongoDB Aggregation Pipelines (Dashboards) | Backend | ✅ Complete |
+| **7** | Design System, Navbar, Public Pages & Job Search | Frontend | ✅ Complete |
+| **8** | AuthContext, ProtectedRoute & Role Guards | Frontend | ✅ Complete |
+| **9** | Seeker Dashboard & Employer Candidate Board | Frontend | ✅ Complete |
+| **10**| Seed Script & Testing Matrix Execution (92/92 Tests) | Team | ✅ Complete |
+| **11**| Live Cloud Deployment (Vercel + Render + Atlas) | Team | ✅ Complete |
+| **12**| Defense Package & Oral Presentation Runbook | Team | ✅ Complete |
